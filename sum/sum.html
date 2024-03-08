@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>CALCULATOR</h2>
+        <script>
+        
+        function sum() {
+     
+           var firstNum = Number(document.getElementById('firstNum').value);
+
+           var secondNum = Number(document.getElementById('secondNum').value);
+
+           document.getElementById('sum').innerHTML = firstNum + secondNum;
+           document.getElementById('difference').innerHTML = firstNum - secondNum;
+           document.getElementById('product').innerHTML = firstNum * secondNum;
+           document.getElementById('qoutient').innerHTML = firstNum / secondNum;
+
+                
+            }
+            </script>
+            </head>
+
+            <body>
+                <p>First Number:</p>
+                <input type="text" id="firstNum"></input>
+            </br>
+            </br>
+
+            <p>Second Number:</p>
+            <input type="text" id="secondNum"></input>
+            </br>
+            </br>
+                <button type = "button" id="sum" onclick="sum()">Compute</button>
+                <p id="sum">The sum is:</p>
+                <p id="difference"></p>
+                <p id="product"></p>
+                <p id="qoutient"></p>
+
+            </body>
+
+            </html>
+            
